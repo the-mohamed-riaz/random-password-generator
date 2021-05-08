@@ -1,0 +1,12 @@
+.card--size {
+    width: 22rem;
+    height: auto;
+}
+
+.scroll--off {
+    overflow: hidden;
+}
+
+.image--icon {
+    width: 2rem;
+}
