@@ -1,0 +1,23 @@
+<div class="container my-6">
+    <div class="columns is-centered my-6">
+        <div class="box column is-one-half">
+            <h1 class="title has-text-centered mt-3">Typing Challenge</h1>
+            <p class="subtitle has-text-centered m-6">
+                <span [class]="compare(letter,userInput[i])" *ngFor="let letter of randSentance.split('');let i = index;">{{letter}}</span>
+            </p>
+            <div class="columns is-centered ">
+                <p class="has-text-centered">Completed {{progressBar()}}%</p>
+            </div>
+            <div class="mx-5 mt-2 mb-5"><progress class="progress is-primary" [value]="progressBar()" max="100"></progress></div>
+            <div class="field m-4">
+                <input spellcheck="false" (input)="handleUserInput($event.target.value)" class="input" type="text">
+            </div>
+            <section *ngIf="randSentance === userInput" class="hero is-success">
+                <div class="hero-body">
+                    <h1 class="title">Success</h1>
+                    <p class="subtitle">Hurray you have done it!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

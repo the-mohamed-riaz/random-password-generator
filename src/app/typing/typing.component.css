@@ -1,0 +1,14 @@
+.pending {
+    color: rgb(102, 102, 102);
+}
+
+.correct {
+    color: rgb(40, 211, 40);
+    text-decoration: underline;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
